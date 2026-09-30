@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useState, useRef } from 'react'
 import './Weather.css'
 import SearchIcon from '../assets/search.png'
 import ClearIcon from '../assets/clear.png'
@@ -13,7 +13,13 @@ const Weather = () => {
 
     const inputRef = useRef();
 
-    const [weatherData, setWeatherData] = useState(false);
+    const [weatherData, setWeatherData] = useState({
+        humidity: 0,
+        windSpeed: 0,
+        temperature: 0,
+        location: '',
+        icon: null
+    });
 
     const allIcons = {
         '01d': ClearIcon,
@@ -46,7 +52,7 @@ const Weather = () => {
             const data = await response.json();
 
 
-            if(!response.ok){
+            if (!response.ok) {
                 alert(data.message);
                 return;
             }
@@ -73,7 +79,10 @@ const Weather = () => {
                 <img src={SearchIcon} alt="Search" onClick={() => search(inputRef.current.value)} />
             </div>
 
-            {weatherData ? <> <img src={weatherData.icon} alt="Weather" className='weather-icon' />
+            {weatherData && <>
+                {weatherData.icon && (
+                    <img src={weatherData.icon} alt="Weather" className='weather-icon' />
+                )}
                 <p className='temperature'>{weatherData.temperature}°C</p>
                 <p className='location'>{weatherData.location}</p>
                 <div className="weather-data">
