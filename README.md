@@ -48,4 +48,5 @@ The application takes the city entered by the user and sends a request to the we
 
 The API returns the current weather information for that location, which is then displayed on the screen using React.
 
-Made by Kanika
+## Made By
+Kanika
