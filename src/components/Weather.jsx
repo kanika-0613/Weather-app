@@ -8,6 +8,7 @@ import RainIcon from '../assets/rain.png'
 import SnowIcon from '../assets/snow.png'
 import ThunderIcon from '../assets/thunder.png'
 import WindIcon from '../assets/wind.png'
+import DefaultIcon from '../assets/default.png'
 
 const Weather = () => {
 
@@ -18,7 +19,7 @@ const Weather = () => {
         windSpeed: 0,
         temperature: 0,
         location: '',
-        icon: null
+        icon: DefaultIcon
     });
 
     const allIcons = {
