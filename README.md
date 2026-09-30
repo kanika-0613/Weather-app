@@ -1,16 +1,51 @@
-# React + Vite
+# Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple weather application built using React.js. This project allows users to search for a city and view its current weather information using a weather API.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://kanika-0613.github.io/Weather-app/
 
-## React Compiler
+## About the Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+I built this project while learning React.js to understand how API integration works in a React application.
 
-## Expanding the ESLint configuration
+The user can enter a city name and get information such as:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Current temperature
+- Location
+- Humidity
+- Wind speed
+- Weather condition
+- Weather icon
+
+The application also has a responsive design so that it can be used on both desktop and mobile devices.
+
+## Features
+
+- Search weather by city name
+- Displays current weather information
+- Shows temperature in Celsius
+- Displays humidity and wind speed
+- Weather icons based on the current condition
+- Responsive design for different screen sizes
+- API integration for fetching weather data
+
+## Technologies Used
+
+- React.js
+- JavaScript
+- HTML
+- CSS
+- Vite
+- Weather API
+- Git
+- GitHub
+
+## How It Works
+
+The application takes the city entered by the user and sends a request to the weather API.
+
+The API returns the current weather information for that location, which is then displayed on the screen using React.
+
+Made by Kanika
