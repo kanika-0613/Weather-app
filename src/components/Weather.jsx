@@ -66,9 +66,6 @@ const Weather = () => {
             console.error('Error fetching weather data:');
         }
     }
-    useEffect(() => {
-        search('new york');
-    }, [])
     return (
         <div className='weather'>
             <div className="search-bar">
